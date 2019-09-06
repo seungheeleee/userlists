@@ -25,7 +25,7 @@ app.get('/topic/add',(req,res)=>{
             res.status(500).send("Internel Server Error")
         }
         console.log(result)
-        res.send(result)
+        res.render('add',{topics : result})
     })
 })
 
